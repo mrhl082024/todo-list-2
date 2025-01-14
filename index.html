@@ -7,6 +7,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>todo</title>
   </head>
+  <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: seashell;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        background-color: #407076;
+        color: whitesmoke;
+        width: 55%;
+        border-radius: 10px;
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    #list-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        gap: 5px;
+        width: 100%;
+    }
+
+    .main-card{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border: 2px rgb(225, 234, 243) solid;
+        border-radius: 10px;
+        padding: 5px;
+        background-color: whitesmoke;
+        width: 50%;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        width: 55%;
+        font-size: 25px;
+    }
+
+    .container1{
+        font-size: large;
+    }
+
+    .container2{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        font-size: large;
+    }
+
+    .text{
+        text-align: center;
+        font-size: large;
+        font-weight: bold;
+        border-color: #40707600;
+        border-radius: 10px;
+        background-color: whitesmoke;
+    }
+  </style>
   <body>
     <header>
       <h1>Todo list</h1>
